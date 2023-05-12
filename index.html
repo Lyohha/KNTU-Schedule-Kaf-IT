@@ -96,53 +96,6 @@
 		
 		
 	</style>
-	<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-	<script>
-		$(document).ready(function() {
-		
-			let $lines = $('tbody').find('tr');
-			
-			
-		
-			$('[js-group]').click(function(event) {
-				event.preventDefault();
-				
-				console.log('group');
-				
-				let $this = $(this);
-				
-				let value = parseInt($this.attr('js-group'));
-				
-				$('td').removeClass('group');
-				$('th').removeClass('group');
-				
-				$this.addClass('group');
-				
-				$lines.each(function(index) {
-					let $line = $(this);
-					
-					let $tds = $line.find('td');
-					
-					$($tds[value]).addClass('group');
-					
-				});
-				
-			});
-			
-			$('[js-date]').click(function(event) {
-				event.preventDefault();
-				
-				console.log('date');
-				
-				let $this = $(this);
-				
-				$('td').removeClass('date');
-				
-				$this.parent().children().addClass('date');
-				
-			});
-		});
-	</script>
 </head>
 <body>
 <div class="table_body">
@@ -1033,5 +986,52 @@
 		</tbody>
 	</table>
 </div>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function() {
+		
+			let $lines = $('tbody').find('tr');
+			
+			
+		
+			$('[js-group]').click(function(event) {
+				event.preventDefault();
+				
+				console.log('group');
+				
+				let $this = $(this);
+				
+				let value = parseInt($this.attr('js-group'));
+				
+				$('td').removeClass('group');
+				$('th').removeClass('group');
+				
+				$this.addClass('group');
+				
+				$lines.each(function(index) {
+					let $line = $(this);
+					
+					let $tds = $line.find('td');
+					
+					$($tds[value]).addClass('group');
+					
+				});
+				
+			});
+			
+			$('[js-date]').click(function(event) {
+				event.preventDefault();
+				
+				console.log('date');
+				
+				let $this = $(this);
+				
+				$('td').removeClass('date');
+				
+				$this.parent().children().addClass('date');
+				
+			});
+		});
+	</script>
 </body>
 </html>
