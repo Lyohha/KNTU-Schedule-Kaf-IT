@@ -16,8 +16,8 @@
 		}
 		
 		.table_body {
-			/*height: 100vh;
-			overflow: auto;*/
+			height: 100vh;
+			overflow: auto;
 		}
 		
 		.table {
@@ -47,6 +47,7 @@
 			border: 1px solid black;
 			background-color: white;
 			padding: 5px;
+			height: 70px;
 		}
 		
 		.gray {
@@ -94,6 +95,21 @@
 			background-color: #e4e4e4;
 		}
 		
+		@media(max-width: 768px) {
+			.table tr td:first-child {
+				padding: 0;
+			}
+		
+			.table tr td:first-child div {
+				    transform: rotate(180deg);
+					writing-mode: vertical-rl;
+					border: 1px solid black;
+					width: 100%;
+					height: 100%;
+					margin-left: -1px;
+			}
+		}
+		
 		
 	</style>
 </head>
@@ -117,9 +133,11 @@
 		<tbody>
 			<tr>
 				<td js-date>
+					<div>
 					<strong>05.06.2023</strong>
 					</br>
 					ПОНЕДІЛОК
+					</div>
 				</td>
 				<td>
 					<div class="exam">
@@ -190,9 +208,11 @@
 			</tr>
 			<tr>
 				<td js-date>
+					<div>
 					<strong>06.06.2023</strong>
 					</br>
 					ВІВТОРОК
+					</div>
 				</td>
 				<td>
 					<div class="exam">
@@ -270,9 +290,11 @@
 			</tr>
 			<tr>
 				<td js-date>
+					<div>
 					<strong>07.06.2023</strong>
 					</br>
 					СЕРЕДА
+					</div>
 				</td>
 				<td></td>
 				<td>
@@ -322,9 +344,11 @@
 			</tr>
 			<tr>
 				<td js-date>
+					<div>
 					<strong>08.06.2023</strong>
 					</br>
 					ЧЕТВЕР
+					</div>
 				</td>
 				<td>
 					<div class="exam">
@@ -367,9 +391,11 @@
 			</tr>
 			<tr>
 				<td js-date>
+					<div>
 					<strong>09.06.2023</strong>
 					</br>
 					П’ЯТНИЦЯ
+					</div>
 				</td>
 				<td>
 					<div class="exam">
@@ -426,9 +452,11 @@
 			</tr>
 			<tr>
 				<td class="light_gray">
+					<div>
 					<strong>10.06.2023</strong>
 					</br>
 					СУБОТА
+					</div>
 				</td>
 				<td></td>
 				<td></td>
@@ -442,9 +470,11 @@
 			</tr>
 			<tr>
 				<td class="light_gray">
+					<div>
 					<strong>11.06.2023</strong>
 					</br>
 					НЕДІЛЯ
+					</div>
 				</td>
 				<td></td>
 				<td></td>
@@ -459,9 +489,11 @@
 			
 			<tr>
 				<td js-date>
+					<div>
 					<strong>12.06.2023</strong>
 					</br>
 					ПОНЕДІЛОК
+					</div>
 				</td>
 				<td>
 					<div class="exam">
@@ -539,9 +571,11 @@
 			</tr>
 			<tr>
 				<td js-date>
+					<div>
 					<strong>13.06.2023</strong>
 					</br>
 					ВІВТОРОК
+					</div>
 				</td>
 				<td>
 					<div class="exam">
@@ -619,9 +653,11 @@
 			</tr>
 			<tr>
 				<td js-date>
+					<div>
 					<strong>14.06.2023</strong>
 					</br>
 					СЕРЕДА
+					</div>
 				</td>
 				<td></td>
 				<td></td>
@@ -649,9 +685,11 @@
 			</tr>
 			<tr>
 				<td js-date>
+					<div>
 					<strong>15.06.2023</strong>
 					</br>
 					ЧЕТВЕР
+					</div>
 				</td>
 				<td>
 					<div class="exam">
@@ -729,9 +767,11 @@
 			</tr>
 			<tr>
 				<td js-date>
+					<div>
 					<strong>16.06.2023</strong>
 					</br>
 					П’ЯТНИЦЯ
+					</div>
 				</td>
 				<td>
 					<div class="exam">
@@ -811,9 +851,11 @@
 			</tr>
 			<tr>
 				<td class="light_gray">
+					<div>
 					<strong>17.06.2023</strong>
 					</br>
 					СУБОТА
+					</div>
 				</td>
 				<td></td>
 				<td></td>
@@ -827,9 +869,11 @@
 			</tr>
 			<tr>
 				<td class="light_gray">
+					<div>
 					<strong>18.06.2023</strong>
 					</br>
 					НЕДІЛЯ
+					</div>
 				</td>
 				<td></td>
 				<td></td>
@@ -844,9 +888,11 @@
 			
 			<tr>
 				<td js-date>
+					<div>
 					<strong>19.06.2023</strong>
 					</br>
 					ПОНЕДІЛОК
+					</div>
 				</td>
 				<td>
 					<div class="exam">
@@ -875,9 +921,11 @@
 			</tr>
 			<tr>
 				<td js-date>
+					<div>
 					<strong>20.06.2023</strong>
 					</br>
 					ВІВТОРОК
+					</div>
 				</td>
 				<td>
 					<div class="exam">
@@ -905,9 +953,11 @@
 			</tr>
 			<tr>
 				<td js-date>
+					<div>
 					<strong>21.06.2023</strong>
 					</br>
 					СЕРЕДА
+					</div>
 				</td>
 				<td></td>
 				<td></td>
@@ -921,9 +971,11 @@
 			</tr>
 			<tr>
 				<td js-date>
+					<div>
 					<strong>22.06.2023</strong>
 					</br>
 					ЧЕТВЕР
+					</div>
 				</td>
 				<td></td>
 				<td></td>
@@ -937,9 +989,11 @@
 			</tr>
 			<tr>
 				<td js-date>
+					<div>
 					<strong>23.06.2023</strong>
 					</br>
 					П’ЯТНИЦЯ
+					</div>
 				</td>
 				<td></td>
 				<td></td>
@@ -953,9 +1007,11 @@
 			</tr>
 			<tr>
 				<td class="light_gray">
+					<div>
 					<strong>24.06.2023</strong>
 					</br>
 					СУБОТА
+					</div>
 				</td>
 				<td></td>
 				<td></td>
@@ -969,9 +1025,11 @@
 			</tr>
 			<tr>
 				<td class="light_gray">
+					<div>
 					<strong>25.06.2023</strong>
 					</br>
 					НЕДІЛЯ
+					</div>
 				</td>
 				<td></td>
 				<td></td>
